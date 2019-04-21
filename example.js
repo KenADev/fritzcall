@@ -1,9 +1,9 @@
 var fritzcall = require('./index.js');
 
 
-fritzcall.login('fritz.box', '1234')
+fritzcall.login('fritz.box', 'password1234', 'optional username')
     .then(function () {
-        return fritzcall.dial_and_hang_up('**9', 7, true);
+        return fritzcall.dial_and_hang_up('**9', 7, true); // **9 = broadcast call (Rundruf)
     })
     .then(function () {
         console.log("FRITZCALL SUCCEEDED");

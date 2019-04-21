@@ -1,7 +1,7 @@
 {
   "name": "fritzcall",
   "version": "1.0.0",
-  "description": "",
+  "description": "Module for Fritz!Box Phone Dailer (Waehlhilfe)",
   "main": "index.js",
   "scripts": {
     "test": "node example.js"

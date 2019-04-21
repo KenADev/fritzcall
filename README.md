@@ -2,6 +2,8 @@
 **FritzCall** is designed to be a simple promise-based **Node.js** module to 
 **automatically dial phone numbers** using your **Fritz!Box**.
 
+[![npm package](https://nodei.co/npm/fritzcall.png?downloads=true&downloadRank=true&stars=false)](https://nodei.co/npm/request/)
+
 ## Phone Dialer (Wählhilfe)
 FritzCall is able to call a specified phone number and wait for the callee to pick up.  
 As soon as the callee picks up his phone, he is put on hold and

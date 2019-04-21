@@ -1,5 +1,5 @@
 {
-  "name": "@ken.a.dev/fritzcall",
+  "name": "fritzcall",
   "version": "1.0.0",
   "description": "Module for Fritz!Box Phone Dailer (Waehlhilfe)",
   "main": "index.js",

@@ -1,7 +1,7 @@
 /***
- * FRITZCALL MODULE
- * by
- *
+ * FRITZCALL NODE.JS MODULE
+ * by KenADev
+ * https://github.com/KenADev/fritzcall/
  *
  */
 
@@ -41,7 +41,7 @@ var fritzcall =
 
             return new Promise(function (resolve, reject) {
 
-                that.__getAndSolveChallenge(hostname, password, username)
+                that.__getAndSolveChallenge()
                     .then(function (login_token) {
 
                         var request_url = "http://" + that.data.hostname + "/login_sid.lua";
@@ -210,8 +210,7 @@ var fritzcall =
          * @param password
          * @returns {Promise<any>}
          */
-        __getAndSolveChallenge: function (hostname, password) {
-            this.data.hostname = hostname;
+        __getAndSolveChallenge: function () {
             var that = this;
             return new Promise(function (resolve, reject) {
                 var request_url = "http://" + that.data.hostname + "/login_sid.lua";
@@ -241,7 +240,7 @@ var fritzcall =
 
 
                         // build login challenge token
-                        var rawtoken = challenge + "-" + password;
+                        var rawtoken = challenge + "-" + that.data.password;
                         //console.log(rawtoken);
                         var utf16le_token = that.__encodeUTF16LE(rawtoken);
                         var md5_token = crypto.createHash('md5').update(utf16le_token).digest("hex");

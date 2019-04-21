@@ -1,0 +1,16 @@
+{
+  "name": "fritzcall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node example.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "querystring": "^0.2.0",
+    "request": "^2.88.0"
+  }
+}

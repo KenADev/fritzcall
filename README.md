@@ -59,21 +59,32 @@ fritzcall.hang_up()
         //error
     });
 ```
-## Documentation
-Please refer to [index.js](https://github.com/KenADev/fritzcall/blob/master/index.js) for JavaDoc style documentation comments. 
 
 ## Compatibility
-FritzCall has been developed using a Fritz!Box Fon WLAN 7390 @ Fritz!OS 06.85. 
- 
-If you can access these two URLs on your Fritz!Box, chances are good FritzCall will work on your Fritz!Box:  
+FritzCall has been developed using a Fritz!Box Fon WLAN 7390 @ Fritz!OS 06.85.  
+
+If you can access these two URLs on your Fritz!Box, chances are good that FritzCall will work on your Fritz!Box:  
 * http://fritz.box/login_sid.lua
 * http://fritz.box/fon_num/fonbook_list.lua  
 
-## Disclaimer and Warnings
+## Documentation
+Please refer to [index.js](https://github.com/KenADev/fritzcall/blob/master/index.js) for JavaDoc style comments. 
+
+## Disclaimer, Warnings & License
 ### Warning
-FritzCall is able to place phone calls to **any** phone number (internal and *external*), even fee-based numbers and Fritz!Box special codes. You will be liable to any charges.   
+FritzCall is able to place phone calls to **any** phone number (internal and *external*), even fee-based numbers and Fritz!Box special codes. You will be liable to any charges or damages.   
 Always make sure to validate your input data and use common security practices.
 
+### License
+The MIT License (MIT)
+
+Copyright (c) 2013-2017 Petka Antonov
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
 ### Disclaimer
-FritzCall is in no way associated or endorsed with AVM Computersysteme Vertriebs GmbH or Fritz!Box products.  
-This repository contains as-is, use at your own risk software. Functionality is not guaranteed.
+FRITZCALL AND IT'S AUTHOR ARE IN NO WAY ASSOCIATED OR ENDORSED WITH AVM COMPUTERSYSTEME VERTRIEBS GMBH OR FRITZ!BOX PRODUCTS.  
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

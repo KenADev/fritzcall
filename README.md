@@ -15,9 +15,9 @@ It is possible to dial internal and external phone numbers.
 ```javascript
 var fritzcall = require('fritzcall');
 
-fritzcall.login('fritz.box', '1234', 'username' /*optional*/)
+fritzcall.login('fritz.box', 'password1234', 'username' /*optional*/)
     .then(function () {
-        return fritzcall.call('**9');
+        return fritzcall.call('0123456789');
     })
     .then(function () {
         //success
@@ -34,7 +34,7 @@ wait a certian period of time, and eventually hang up.
 ```javascript
 var fritzcall = require('fritzcall');
 
-fritzcall.login('fritz.box', '1234', 'username' /*optional*/)
+fritzcall.login('fritz.box', 'password1234', 'username' /*optional*/)
     .then(function () {
         
         return fritzcall.dial_and_hang_up('**9', 7, true);

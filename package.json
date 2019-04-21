@@ -1,16 +1,37 @@
 {
-  "name": "fritzcall",
+  "name": "@ken.a.dev/fritzcall",
   "version": "1.0.0",
   "description": "Module for Fritz!Box Phone Dailer (Waehlhilfe)",
   "main": "index.js",
   "scripts": {
     "test": "node example.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "ken.a.dev@gmail.com",
+  "license": "MIT",
   "dependencies": {
     "crypto": "^1.0.1",
     "querystring": "^0.2.0",
     "request": "^2.88.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KenADev/fritzcall.git"
+  },
+  "keywords": [
+    "fritzbox",
+    "fritz!box",
+    "wählhilfe",
+    "fritz",
+    "fon",
+    "phone",
+    "dialer",
+    "call",
+    "dial",
+    "ring"
+  ],
+  "bugs": {
+    "url": "https://github.com/KenADev/fritzcall/issues"
+  },
+  "homepage": "https://github.com/KenADev/fritzcall#readme"
 }

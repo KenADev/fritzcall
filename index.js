@@ -35,9 +35,9 @@ var fritzcall =
         login: function (hostname, password, username = false) {
             var that = this;
 
-            that.hostname = hostname;
-            that.username = username;
-            that.password = password;
+            that.data.hostname = hostname;
+            that.data.username = username;
+            that.data.password = password;
 
             return new Promise(function (resolve, reject) {
 
@@ -171,7 +171,7 @@ var fritzcall =
                     + "/fon_num/fonbook_list.lua?"
                     + (
                         (phonenumber === false || phonenumber === null) ?
-                            "hang_up=" : ("dial=" + encodeURIComponent(phonenumber))
+                            "hangup=" : ("dial=" + encodeURIComponent(phonenumber))
                     )
                     + "&sid=" + that.data.sid;
 
